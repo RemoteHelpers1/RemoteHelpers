@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #161616;
+    }
+
+    h3 {
+      color: rgb(156, 180, 178);
+    }
+
+    .block {
+      background-color: rgb(29, 34, 38);
+      color: rgb(156, 180, 178);
+      font-family: "Times New Roman", Times, serif;
+      font-size: large;
+      border: 1px solid #999;
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      white-space: pre-line;
+    }
+
+    .selected {
+      background-color: rgb(63, 77, 87);
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: rgb(29, 34, 38);
+      position: fixed;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      background-color: rgb(29, 34, 38);
+      color: rgb(156, 180, 178);
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: rgb(104, 102, 102);
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: rgb(65, 64, 64);
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 50px 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tab">
+    <button id="first" class="tablinks" onclick="selectTab(event, '1')">
+      First
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '2')">
+      Second
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '3')">
+      Third
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '4')">
+      Fourth
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '5')">
+      Short first
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '6')">
+      Not interested
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '7')">
+      Interested
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '8')">
+      Affiliate
+    </button>
+    <button class="tablinks" onclick="selectTab(event, '9')">
+      For old connections
+    </button>
+  </div>
+
+  <div id="1" class="tabcontent">
+    <h3>FIRST MESSAGES:</h3>
+    <div class="block">
+      Hi! I represent an outstaffing company Remote Helpers. We provide our clients all over the world with remote
+      employees in IT & Marketing services! Might you be interested in hearing more?😊🌍
+    </div>
+    <div class="block">
+      Hi. I'm from Remote Helpers, an outstaffing company. We specialize in enhancing teams with our skilled remote
+      professionals. 👥 Might you be interested in hearing more?🚀
+    </div>
+    <div class="block">
+      Hi! I represent an outstaffing company from Ukraine. We have a huge number of remote employees for online work and
+      would be happy to propose you cooperation. I hope we can have a small chat after that. https://www.rh-s.com/ -
+      visit our website
+    </div>
+    <div class="block">
+      Remote staff: available candidates in different areas with video CV. Can we discuss which specialist or service
+      you are interested in? Let's have a call. https://www.rh-s.com/ - visit our website.
+    </div>
+    <div class="block">
+      Hi! Remote staff for IT and digital marketing for a reasonable price. Let's chat, find a fit, and discuss our
+      model. Interested? https://www.rh-s.com/ - visit our website😊🌍
+    </div>
+  </div>
+
+  <div id="2" class="tabcontent">
+    <h3>SECOND MESSAGES:</h3>
+    <div class="block">
+      Thanks for adding me! Candidates we provide are working mainly in 4 fields: lead generation, marketing, design,
+      and media departments. We have lots of specialties like SMM, SEO, PPC, Content manager, Accountant, WordPress
+      Designers etc. Can you, please, coordinate which specialist or service are you interested in? Let's set up the
+      call with our candidates according to your needs. Can you share your email so I can send the invitation to the
+      call?
+    </div>
+    <div class="block">
+      Thanks for adding me! Candidates we provide you to hire can work in the following positions: Lead Generation
+      Managers, Customer Support, Personal Assistants, Social Media Managers, Designers, Media Buyers, PPC, SEO, AdOps,
+      etc. We can set a call to see if we can find a fit for you and of course explain our model if you are interested:)
+    </div>
+    <div class="block">
+      Thanks for adding me!
+      Candidates we offer you to hire can work in the following positions: Developers(Back-End, Front-End, Full-Stack,
+      QA Testers), Lead Generation Managers, Customer Support, Personal Assistants, Social Media Managers, Designers,
+      Media Buyers, PPC, SEO, AdOps, English teachers, etc.
+      Оur website rh-s.com has a video CV of our employees, their work experience and skills.
+      We can set a call to see if we can find a fit for you and of course explain our model if you are interested.
+    </div>
+    <div class="block">
+      Thanks for adding me! Candidates we offer you to hire can work in the following positions: Lead Generation
+      Managers, Personal Assistants, Social Media Managers, Designers, SEO, PPC, AdOps, etc. Оur website
+      https://www.rh-s.com/ has video CVs of our employees. We can set a call to see if we can find a fit for you and of
+      course explain our model. Are you interested?!
+    </div>
+    <div class="block">
+      Hello! Glad to be connected with you. We provide foreign companies with help in such spheres as lead generation,
+      content management, design, devs, video editing, SEO, PPC etc. We can have a short call when it's the best time
+      for you and discuss our possible cooperation!
+    </div>
+    <div class="block">
+      Thanks for adding me! Candidates we propose to hire are working mainly in 4 fields: lead generation, marketing,
+      design and media departments. We have lots of specialties like SMM, SEO, PPC, Content manager, Accountant,
+      WordPress Designers etc. Can you, please, coordinate which specialist or service you are interested in?
+    </div>
+    <div class="block">
+      We can set a call to see if we can find a fit for you and of course explain our model. Are you interested? Look
+      forward to hearing from you. Here is the presentation about all our offers and price, please have a look
+      https://docs.google.com/presentation/d/e/2PACX-1vRnbzm6l5t9liwVkbaaQaIjx_CUt1PYnRq5UZsflZ7B-5r8MsWeVj4R9dhEl_5wz2QJN1Zy-y3FU_n6/pub?start=false&loop=false&delayms=60000
+      .
+      Best regards,
+      rh-s.com
+      Remote Helpers
+    </div>
+    <div class="block">
+      Thanks for connecting. We provide foreign companies with help in such spheres as lead generation, content
+      management, design, video editing, SEO, PPC etc. What service might be relevant to you?
+    </div>
+  </div>
+
+  <div id="3" class="tabcontent">
+    <h3>THIRD MESSAGES:</h3>
+    <div class="block">
+      Hi! Have you thought about our offer? Мaybe you have time this or next week to discuss possible cooperation and to
+      set up a business connection? We will be glad to work with you.
+      Let's have a call. Here you can visit our website - https://www.rh-s.com/
+    </div>
+    <div class="block">
+      Hi! Have you thought about our suggestion? Мaybe you have time this or next week to discuss possible cooperation
+      and to set up a business connection? We will be glad to work with you:)
+    </div>
+    <div class="block">
+      Hello! Hope you are doing well.
+      Have you thought about our offer?
+      Мaybe you have time this or next week to discuss details?
+      Please, let me know in case you have any questions.
+      I would be glad to receive feedback from you.
+      Best regards
+    </div>
+    <div class="block">
+      Hi, just want to share with you some information about us.
+      https://docs.google.com/presentation/d/e/2PACX-1vRnbzm6l5t9liwVkbaaQaIjx_CUt1PYnRq5UZsflZ7B-5r8MsWeVj4R9dhEl_5wz2QJN1Zy-y3FU_n6/pub?start=false&loop=false&delayms=60000
+      Please let me know if the above is something you or your team might be interested in and if we can schedule a
+      short intro meeting next week.
+      Regards
+    </div>
+    <div class="block">
+      Candidates we offer you to hire can work in the following positions: Lead Generation Managers, Customer Support,
+      Personal Assistants, Developers, Recruiters, Social Media Managers, Designers, Media Buyers, PPC, SEO, AdOps,
+      English teachers etc. Who are you interested in?
+    </div>
+  </div>
+
+  <div id="4" class="tabcontent">
+    <h3>FOURTH MESSAGES:</h3>
+    <div class="block">
+      Hi! Any chance we can still talk for a few minutes? Thanks
+    </div>
+    <div class="block">
+      Hi! You may not have noticed my messages above. I would be really grateful for your reply. Thanks
+    </div>
+    <div class="block">
+      Let's have a quick call to discuss teaming up with our skilled professionals. When's the best time for you?
+    </div>
+    <div class="block">
+      Hello Name,
+
+      Our company has many candidates for different positions. Are you interested in it? Are you hiring?
+
+      Thanks
+    </div>
+  </div>
+
+  <div id="5" class="tabcontent">
+    <h3>FIRST SHORT MESSAGES:</h3>
+    <div class="block">
+      Remote staff: available candidates in different areas with video CV. Ready to view?
+    </div>
+    <div class="block">
+      Hire remote staff. Free call and free interview. Candidates with video CVs. Ready to view?
+    </div>
+    <div class="block">
+      Available candidates in different areas, video CVs and immediate hiring. Ready to view https://www.rh-s.com/?
+    </div>
+    <div class="block">
+      Remote employees who are already trained and tested by us for IT and digital marketing. Immediate hiring. Sounds
+      good?
+    </div>
+    <div class="block">
+      Productive and quality remote staff and variety of services. Want to know more?
+    </div>
+    <div class="block">
+      Remote English speaking staff by your needs and requirements. Interested?
+    </div>
+    <div class="block">
+      A variety of services in IT and digital marketing with a huge database of candidates with video CVs. Ready to view
+      their profiles?
+    </div>
+    <div class="block">
+      Looking for online workers? Hiring in 3 steps: pick up candidates, free interview, adaptable agreement. Are you
+      in?
+    </div>
+    <div class="block">
+      Dedicated remote staff for full or part time. Fixed price. No tax, no fees. Want more?
+    </div>
+    <div class="block">
+      Hire remote staff: flexible and affordable contracts with no minimum commitment and no tax or fees.
+    </div>
+    <div class="block">
+      Save time and money, we handle all the administrative aspects and the hiring process. Interested?
+    </div>
+    <div class="block">
+      Don't waste your time - we will handle the hiring process for you.
+    </div>
+    <div class="block">
+      Remote staff: fast hiring process, low prices, and flexible contracts. Let’s talk?
+    </div>
+    <div class="block">
+      Trained and tested candidates with video CVs. Immediate hiring. Interested?
+    </div>
+    <div class="block">
+      Available candidates and 350+ satisfied customers in IT and digital marketing. Are you in?
+    </div>
+    <div class="block">
+      Pick candidates by your needs. Interested?
+    </div>
+    <div class="block">
+      Online employees: English speaking, trained and tested by us, supported by team leads, daily reports. Interested?
+    </div>
+    <div class="block">
+      Trained and tested remote employees. Hire now?
+    </div>
+    <div class="block">
+      Hire online employees. Reduce your risks - we handle all the administrative aspects. Let's talk?
+    </div>
+    <div class="block">
+      Save your time - choose already trained and hired candidates. Ready for the interview?
+    </div>
+    <div class="block">
+      Remote marketing staff will save your time on recruitment process. We already did it for you!
+    </div>
+    <div class="block">
+      Hiring takes up a lot of your time? Save your time - choose already trained and hired candidates. Ready for the
+      interview?
+    </div>
+    <div class="block">
+      Remote staff for IT and digital marketing for a reasonable price. Let's chat, find a fit, and discuss our model.
+      Interested?
+    </div>
+    <div class="block">
+      Remote staff: available candidates in different areas with video CV. Can we discuss which specialist or service
+      you are interested in? Let's have a call.
+    </div>
+    <div class="block">
+      Dedicated remote staff for full or part time. Fixed price. No tax, no fees. Want more? https://www.rh-s.com/ - our
+      website
+    </div>
+    <div class="block">
+      Remote employees who are already trained and tested by us for Digital Marketing. Immediate hiring. Sounds good?
+    </div>
+  </div>
+
+  <div id="6" class="tabcontent">
+    <h3>IF NOT INTERESTED FOR NOW:</h3>
+    <div class="block">
+      Thank you for the reply.
+      Please keep us in mind and don’t hesitate to contact us when you need our services. Our website rh-s.com and our
+      presentation in case you need our services in the future
+      https://docs.google.com/presentation/d/e/2PACX-1vRnbzm6l5t9liwVkbaaQaIjx_CUt1PYnRq5UZsflZ7B-5r8MsWeVj4R9dhEl_5wz2QJN1Zy-y3FU_n6/pub?start=false&loop=false&delayms=60000
+      We will be glad to work with you.
+    </div>
+
+    <h3>IF NOT INTERESTED:</h3>
+    <div class="block">
+      Thank you for the reply.
+      Please keep us in mind and don’t hesitate to contact us when you need our services. Our website rh-s.com
+      Best Regards
+      Remote Helpers
+    </div>
+    <div class="block">
+      Thank you for the reply
+      Please keep us in mind when you need our services.
+      Our presentation in case you need our services in the future
+      https://docs.google.com/presentation/d/e/2PACX-1vRnbzm6l5t9liwVkbaaQaIjx_CUt1PYnRq5UZsflZ7B-5r8MsWeVj4R9dhEl_5wz2QJN1Zy-y3FU_n6/pub?start=false&loop=false&delayms=60000
+      Let's stay in touch! rh-s.com
+      Best Regards
+      rh-s.com
+      Remote Helpers
+    </div>
+    <div class="block">
+      Hi!
+      Thank you for your time. By the way, if you have any questions, please feel free to contact me anytime, here on
+      LinkedIn, I'm available.
+      Best Regards
+      Remote Helpers
+    </div>
+    <div class="block">
+      Okay thanks, here are the links to the site and the presentation, if you are interested, contact me.
+      https://docs.google.com/presentation/d/e/2PACX-1vRnbzm6l5t9liwVkbaaQaIjx_CUt1PYnRq5UZsflZ7B-5r8MsWeVj4R9dhEl_5wz2QJN1Zy-y3FU_n6/pub?start=false&loop=false&delayms=60000
+    </div>
+  </div>
+
+  <div id="7" class="tabcontent">
+    <h3>INTERESTED:</h3>
+    <div class="block">
+      I suggest going out for a short call where we can discuss your needs and we can tell you more about the services
+      we provide that are relevant to your interests.. When is it the best time for you?
+    </div>
+    <div class="block">
+      Candidates we offer you to hire can work in the following positions: Lead Generation Managers, Customer Support,
+      Personal Assistants, Developers, Recruiters, Social Media Managers, Designers, Media Buyers, PPC, SEO, AdOps,
+      English teachers etc. Who are you interested in?
+    </div>
+    <div class="block">
+      Please, send me your email, and I'll send you a Google Meet invitation.
+    </div>
+  </div>
+
+  <div id="8" class="tabcontent">
+    <h3>AFFILIATE:</h3>
+    <div class="block">
+      https://rh-s.com/affiliate
+    </div>
+    <div class="block">
+      We're looking for partners to help us attract new customers. We have extensive resources for our affiliate
+      partners and offer two collaboration models.
+      If you know anyone in your network interested in outstaffing services, this could be a mutually beneficial
+      partnership. Let's jump on a call if you see the opportunity in this type of cooperation?
+    </div>
+    <div class="block">
+      Hello “Name”. Outstaffing company Remote Helpers looking to expand our affiliate network with top partners and you
+      are a perfect candidate. Interested in partnering with us? Let's discuss!
+    </div>
+    <div class="block">
+      Hello, I represent an outstaffing company Remote Helpers. We are looking to expand our affiliate network with top
+      partners and you are a perfect candidate. Interested in partnering with us? Let's discuss!
+    </div>
+  </div>
+
+  <div id="9" class="tabcontent">
+    <h3>FOR OLD CONNECTIONS:</h3>
+    <div class="block">
+      Hi.
+      Our talented candidates are ready to shine in roles like Developers, Lead Generation Managers, Designers,
+      Illustrators, Video Editors, SEO, Project Managers, Content Managers, Personal Assistants, Financiers, Recruiters
+      and more. Let's chat about how they can boost your team. If you have any new needs or questions, feel free to
+      reach out.
+
+      Ready for a short call? Please let me know the time that suits you best and email.
+    </div>
+    <div class="block">
+      Hi.
+      Ready to expand your digital marketing team? We connect you with dedicated employees for
+      full or part-time roles. Interested in discussing how our Lead Generation Managers, Personal
+      Assistants, and creative staff can integrate with your projects? For a detailed conversation,
+      please share your email, and let's arrange a call📈🌿
+    </div>
+    <h3>THE FINAL MESSAGE AFTER FIRST:</h3>
+    <div class="block">
+      We're eager to hear your thoughts on integrating our skilled professionals into your team. Are you available for a
+      brief call to explore the possibilities? Please share a convenient time for a discussion or reply with any
+      questions you have. Looking forward to your response!
+    </div>
+  </div>
+
+
+  <script>
+    var ctrlDown = false,
+      ctrlKey = 17,
+      cmdKey = 91,
+      cKey = 67;
+    var copyText = "";
+
+    let up = document.getElementById("first");
+    up.click();
+
+    function copy(argument) {
+      navigator.clipboard.writeText(copyText);
+    }
+
+    var blockElements = document.getElementsByClassName("block");
+    var blockClick = function (e) {
+      for (var i = 0; i < blockElements.length; i++) {
+        blockElements[i].classList.remove("selected");
+      }
+      e.target.classList.add("selected");
+      copyText = e.target.innerText.trim();
+      copy();
+    };
+
+    for (var i = 0; i < blockElements.length; i++) {
+      blockElements[i].addEventListener("click", blockClick);
+      var str = blockElements[i].innerText;
+      str = str.trim().replace(/ +(?= )/g, "");
+      blockElements[i].innerText = str;
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
+    });
+    document.addEventListener("keyup", function (e) {
+      if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
+    });
+    document.addEventListener("keydown", function (e) {
+      if (ctrlDown && e.keyCode == cKey) {
+        copy();
+      }
+    });
+
+    function selectTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    function adjustContentPadding() {
+      const header = document.querySelector('.tab');
+      const content = document.querySelectorAll('.tabcontent');
+      const headerHeight = header.offsetHeight;
+      for (const ch of content) {
+        ch.style.paddingTop = `${headerHeight}px`;
+      }
+    }
+
+    window.addEventListener('resize', adjustContentPadding);
+
+    adjustContentPadding(); 
+  </script>
+</body>
+
+</html>
